@@ -1,0 +1,4 @@
+// This can be achieved by using a transistor as a switch controlled by a pulse-width modulation (PWM) signal at the transistor gate (or base). 
+// Varying the pulse width of the gate signal with a microcontroller can be used to drive the load in a slowly, controlled way without instantly changing power from 0% to 100%. 
+// Although, if an inductive load is driven, it’s necessary to use a flyback diode parallel to the load so that the current induced in the load 
+// after each circuit open doesn’t damage the transistor. 
