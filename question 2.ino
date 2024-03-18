@@ -1,6 +1,5 @@
 #define BUTTON_PIN 3
 #define DELAY 10000 // ms
-#define CLOCK 16000000 // Arduino UNO's clock in Hz
 
 enum States {OFF, ON, PROTECTED};
 States state = OFF; // initial state
