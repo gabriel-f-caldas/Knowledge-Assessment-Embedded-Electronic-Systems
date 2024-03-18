@@ -1,0 +1,18 @@
+#define INTERRUPT_PIN 2
+int incomingByte = 0
+
+void setup() {
+  attachInterrupt(digitalPinToInterrupt(INTERRUPT_PIN),parse,FALLING); // start bit detection
+  pinMode(INTERRUPT_PIN,INPUT);
+  Serial.begin(9600);
+
+}
+
+void loop() {
+  
+
+}
+
+void parse(){
+  incomingByte = Serial.read();
+}
